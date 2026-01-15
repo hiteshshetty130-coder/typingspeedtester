@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='typing.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <form method="post">
+        <div class="typing-container"> 
+            <div class="typing-box">
+                 <header>
+        <h1>TYPING SPEED TESTER</h1>
+    </header>
+                <div class="typing-paragragh-box">
+                    <textarea name="typing-paragraph" class="typing-paragraph" readonly>{{sentence}}</textarea>
+                </div>
+                <div class="typing-writing-box">
+                    <textarea name="user-input" id="user-input" autofocus>
+                </textarea>
+                </div>
+                <input type="hidden"  name="start-time" value="{{start_time}}">
+               <a href="result.html"> <button type="submit">Submit</button> </a>
+            </div>
+        </div>
+    </form>
+   
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='typing.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="result_box">
+       <center><p><u>SENTENCE:</u><br>{{sentence}}</p></center>
+        <hr>
+        <p>TOTAL TIME: {{total_time}}</p>
+        <p>WORDS PER MINUTE: {{wpm}}</p>
+        <p>ERRORS: {{errors}}</p> 
+    </div>
+</body>
+</html>
